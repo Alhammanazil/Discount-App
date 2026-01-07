@@ -29,22 +29,24 @@ A modern web application for discount management built with Vue.js 3, Vite, and 
 
 ```
 src/
-├── components/          # Reusable UI components
-│   ├── Alert.vue       # Notification component
-│   ├── ConfirmModal.vue # Delete confirmation modal
-│   ├── DiscountModal.vue # Add/edit discount modal
-│   ├── ApiSettingsModal.vue # API settings
-│   └── ConfirmModal.vue # Confirmation dialogs
-├── pages/              # Page-level components
-│   └── DiscountListPage.vue # Main discount list page
-├── router/             # Vue Router configuration
-├── services/           # API integration
-│   └── api.js         # Axios instance and endpoints
-├── stores/             # Pinia state management
-│   └── discountStore.js # Discount state management
-├── assets/             # Static assets and styles
-├── App.vue            # Root component
-└── main.js            # Application entry point
+├── components/
+│   ├── Alert.vue
+│   ├── ConfirmModal.vue
+│   ├── DiscountModal.vue
+│   └── ApiSettingsModal.vue
+├── pages/
+│   └── DiscountListPage.vue
+├── router/
+│   └── index.js
+├── services/
+│   └── api.js
+├── stores/
+│   └── discountStore.js
+├── assets/
+│   └── images/
+│       └── logo.png
+├── App.vue
+└── main.js
 ```
 
 ## Quick Start
@@ -119,41 +121,6 @@ DELETE /diskon/{id}      # Delete discount
 - **Alert**: Toast notifications for success and error messages
 - **ApiSettingsModal**: Dynamic API URL configuration with validation
 
-### State Management
-
-Pinia store handles:
-
-- Discount CRUD operations
-- Loading states
-- Error handling
-- Real-time data synchronization
-
-## Code Quality
-
-- Clean, modular architecture
-- Proper error handling and user feedback
-- Responsive design with mobile support
-- Performance optimized with computed properties and pagination
-- Accessibility-first HTML structure
-- Production-ready configuration
-
-## Deployment
-
-The application is production-ready and can be deployed to:
-
-- **Vercel**: Push to GitHub, auto-deploy
-- **Netlify**: Drag & drop `dist/` folder
-- **Cloudflare Pages**: Git integration
-- **GitHub Pages**: Static hosting
-- **Custom Server**: Copy `dist/` folder to web server
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
 ## Development
 
 ### Environment Variables
@@ -170,11 +137,3 @@ VITE_API_BASE_URL=https://your-api.com/api/endpoint
 - Efficient filtering and sorting with computed properties
 - Minified and optimized production build
 - CSS scoped to prevent style conflicts
-
-## License
-
-MIT
-
----
-
-**Status**: Production Ready ✅
